@@ -1,14 +1,15 @@
 ##### BACKUP AUTOMÁTICO #####
 # Dispositivo : R1 (192.168.110.50)
-# Fecha/Hora  : 28/02/2025 10:20:01
+# Fecha/Hora  : 28/02/2025 12:59:09
 # Descripción : Respaldo de running-config
 ##############################
 
 ++START-CONFIG++
 Building configuration...
 
-Current configuration : 1378 bytes
+Current configuration : 1498 bytes
 !
+! Last configuration change at 20:59:03 UTC Fri Feb 28 2025
 upgrade fpd auto
 version 15.2
 service timestamps debug datetime msec
@@ -62,6 +63,9 @@ ip ssh version 2
 !
 interface Loopback0
  ip address 192.168.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 192.168.2.2 255.255.255.0
 !
 interface FastEthernet0/0
  no ip address
