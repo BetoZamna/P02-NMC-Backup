@@ -1,13 +1,13 @@
 ##### BACKUP AUTOMÁTICO #####
 # Dispositivo : R1 (192.168.110.50)
-# Fecha/Hora  : 03/03/2025 21:13:48
+# Fecha/Hora  : 03/03/2025 21:22:10
 # Descripción : Respaldo de running-config
 ##############################
 
 ++START-CONFIG++
 Building configuration...
 
-Current configuration : 1571 bytes
+Current configuration : 1608 bytes
 !
 ! Last configuration change at 05:06:54 UTC Tue Mar 4 2025
 upgrade fpd auto
@@ -71,6 +71,9 @@ interface Loopback3
  no ip address
 !
 interface Loopback4
+ no ip address
+!
+interface Loopback5
  no ip address
 !
 interface FastEthernet0/0
